@@ -1,0 +1,85 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Body styles */
+body {
+  background-color: #f4fcfc; /* Change this color to your desired background color */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+/* Container styles */
+.body {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  gap: 20px; /* Adjust the gap between the left and right components */
+  padding: 20px; /* Adjust the padding as needed */
+  margin-top: 80px;
+}
+
+/* Left component styles */
+.left {
+  margin-top: 100px;
+  flex: 1; /* Occupy the available space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px; /* Adjust margin as needed */
+}
+
+/* Right component styles */
+.right {
+  margin-top: 100px;
+  flex: 1; /* Occupy the available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #f4fcfc;
+  margin: 20px; /* Adjust margin as needed */
+}
+
+/* Input number styles */
+.custom-input-number {
+  width: 100%; /* Take up the full width on smaller screens */
+  max-width: 200px; /* Set a maximum width */
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 768px) {
+  .body {
+    gap: 50px; /* Adjust the gap for larger screens */
+  }
+
+  .left {
+    margin: 0; /* Reset margin for larger screens */
+  }
+
+  .right {
+    margin: 0; /* Reset margin for larger screens */
+  }
+}
+
+.bar {
+  width: 50%; /* Adjust the width as needed */
+  margin: 0 1%;
+}
+.pie {
+  width: 35%; /* Adjust the width as needed */
+  margin: 0 1%;
+}
+.line {
+  width: 50%;
+  height: 600px; /* Adjust the height as needed */
+  margin: 0 1%;
+}
+
+.chart-flex-container {
+  display: flex;
+  align-items: flex-start; /* Adjust this as needed */
+  gap:150px;
+}
+
+/* Add any additional styling as needed */
