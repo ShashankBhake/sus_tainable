@@ -2,11 +2,11 @@ const { parse } = require("path");
 
 const validate = (schema) => async (req,res,next) => {
     try {
-      console.log("pranyasdasdasdasdasdasd",req.body);
+    //   console.log("pranyasdasdasdasdasdasd",req.body);
       const parseBody = await schema.parseAsync(req.body);
-      console.log("ParseBody " ,parseBody);
+    //   console.log("ParseBody " ,parseBody);
       req.body = parseBody;
-      console.log("i am validate middleware : ",req);
+    //   console.log("i am validate middleware : ",req);
       // next();
       // return res.status(200).json(req.body);
       return next();

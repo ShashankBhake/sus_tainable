@@ -1,0 +1,100 @@
+[
+    {
+      "avatarLabel": "R",
+      "avatarColor": "red",
+      "title": "NEW ITEM",
+      "subheader": "January 1, 2023",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4P_jnhVwU2xSJR5G1vwwJA-_t1Io_Lu9V3WR3QtofXkJ69lOht-emnnrevtINE_d2OU&usqp=CAU",
+      "description": "description",
+      "method": [
+        "Step 1: Do something",
+        "Step 2: Do something else",
+        "Step 3: Enjoy your new recipe"
+      ],
+      "price":"20"
+    },
+    {
+      "avatarLabel": "R",
+      "avatarColor": "red",
+      "title": "NEW ITEM",
+      "subheader": "January 1, 2023",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4P_jnhVwU2xSJR5G1vwwJA-_t1Io_Lu9V3WR3QtofXkJ69lOht-emnnrevtINE_d2OU&usqp=CAU",
+      "description": "description",
+      "method": [
+        "Step 1: Do something",
+        "Step 2: Do something else",
+        "Step 3: Enjoy your new recipe"
+      ],
+      "price":"20"
+    },
+    {
+      "avatarLabel": "R",
+      "avatarColor": "red",
+      "title": "NEW ITEM",
+      "subheader": "January 1, 2023",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4P_jnhVwU2xSJR5G1vwwJA-_t1Io_Lu9V3WR3QtofXkJ69lOht-emnnrevtINE_d2OU&usqp=CAU",
+      "description": "description",
+      "method": [
+        "Step 1: Do something",
+        "Step 2: Do something else",
+        "Step 3: Enjoy your new recipe"
+      ],
+      "price":"20"
+    },
+    {
+      "avatarLabel": "R",
+      "avatarColor": "red",
+      "title": "NEW ITEM",
+      "subheader": "January 1, 2023",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4P_jnhVwU2xSJR5G1vwwJA-_t1Io_Lu9V3WR3QtofXkJ69lOht-emnnrevtINE_d2OU&usqp=CAU",
+      "description": "description",
+      "method": [
+        "Step 1: Do something",
+        "Step 2: Do something else",
+        "Step 3: Enjoy your new recipe"
+      ],
+      "price":"20"
+    },
+    {
+      "avatarLabel": "R",
+      "avatarColor": "red",
+      "title": "NEW ITEM",
+      "subheader": "January 1, 2023",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4P_jnhVwU2xSJR5G1vwwJA-_t1Io_Lu9V3WR3QtofXkJ69lOht-emnnrevtINE_d2OU&usqp=CAU",
+      "description": "description",
+      "method": [
+        "Step 1: Do something",
+        "Step 2: Do something else",
+        "Step 3: Enjoy your new recipe"
+      ],
+      "price":"20"
+    },
+    {
+      "avatarLabel": "R",
+      "avatarColor": "red",
+      "title": "NEW ITEM",
+      "subheader": "January 1, 2023",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4P_jnhVwU2xSJR5G1vwwJA-_t1Io_Lu9V3WR3QtofXkJ69lOht-emnnrevtINE_d2OU&usqp=CAU",
+      "description": "description",
+      "method": [
+        "Step 1: Do something",
+        "Step 2: Do something else",
+        "Step 3: Enjoy your new recipe"
+      ],
+      "price":"20"
+    },
+    {
+      "avatarLabel": "R",
+      "avatarColor": "red",
+      "title": "NEW ITEM",
+      "subheader": "January 1, 2023",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa4P_jnhVwU2xSJR5G1vwwJA-_t1Io_Lu9V3WR3QtofXkJ69lOht-emnnrevtINE_d2OU&usqp=CAU",
+      "description": "description",
+      "method": [
+        "Step 1: Do something",
+        "Step 2: Do something else",
+        "Step 3: Enjoy your new recipe"
+      ],
+      "price":"20"
+    }
+  ]

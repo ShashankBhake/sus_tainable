@@ -26,7 +26,7 @@ export function AuthProvider({ children }) {
           Authorization: `Bearer ${token}`,
         },
       });
-
+      console.log("From login ra",response);
       if (response.ok) {
         const data = await response.json();
         console.log("user authenticated :", data.userData);

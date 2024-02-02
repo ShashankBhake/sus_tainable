@@ -6,55 +6,66 @@ import FormExtra from "./FormExtra";
 import Input from "./Input";
 import { useNavigate } from 'react-router-dom';
 import { toast } from "react-toastify";
+import Header from './Header.jsx';
 
 const fields=loginFields;
 let fieldsState = {};
 fields.forEach(field=>fieldsState[field.id]='');
 
 export default function Login(){
-    const [user,setuser]=useState(fieldsState);
+    const navigate = useNavigate();
 
+    const [user,setuser]=useState(fieldsState);
+    const { storeToken } = useAuth();
     const handleChange=(e)=>{
         setuser({...user,[e.target.id]:e.target.value})
     }
 
-    const handleSubmit=async(e)=>{
+    // const { storeToken } = useAuth();
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             const response = await fetch("http://localhost:1212/login", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(user), // Ensure user object has correct fields
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(user),
             });
+    
             const responseData = await response.json();
+            console.log("From front end login",responseData);
+    
             if (response.ok) {
-              console.log("Registration successful");
-              setuser({
-                email: "",
-                password: "",
-              });
-              // console.log(response);
-              storeToken(responseData.token);
-      
-              navigate("/login");
-              toast.success("Registration successful");
+                console.log("Login successful");
+                setuser({
+                    email: "",
+                    password: "",
+                });
+                storeToken(responseData.token);
+                window.location.href = "/";
+                toast.success("login successful");
+    
             } else {
-              toast.error(responseData.extraDetails);
+                toast.error(responseData.extraDetails);
+                console.log("login failed");
             }
-          } catch (error) {
-            console.log("register", error);
-          }
-        };
+        } catch (error) {
+            console.log("login", error);
+        }
+    };
     
 
    
 
     return(
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+       
+        <form className="mt-1 space-y-1" onSubmit={handleSubmit}>
         <div className="-space-y-px">
+        
             {
+                
                 fields.map(field=>
                         <Input
                             key={field.id}
@@ -77,5 +88,6 @@ export default function Login(){
         <FormAction handleSubmit={handleSubmit} text="Login"/>
 
       </form>
+     
     )
 }
