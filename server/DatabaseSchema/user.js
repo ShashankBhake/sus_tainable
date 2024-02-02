@@ -54,7 +54,7 @@ catch(err)
 }
 
 
-const User = mongoose.model('webuser', UserSchema);
+const User = mongoose.model('webusers', UserSchema);
 
 module.exports = User;  
 

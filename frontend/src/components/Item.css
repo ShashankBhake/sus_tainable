@@ -1,0 +1,37 @@
+.main-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('../images/selling.jpg');
+    background-size: 60% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+td {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.left {
+    width: 60%;
+    height: 100%;
+}
+
+.inside-box {
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    /* background-color: #D7BBAD; */
+}
+
+.form input, .form textarea {
+    border-radius: 6px;
+    margin: 5px;
+}

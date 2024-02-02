@@ -27,13 +27,18 @@ const validate = require('./middleware/validate-middleware');
 const SignUpSchema = require('./validate/auth-validator');
 const loginSchema = require('./validate/login-validator');
 const user = require('./components/user-com');
+const service = require('./components/service');
+const addService = require('./components/addService');
+const serviceSchema = require('./validate/service-validate');
 
 
 
 
 
 app.use('/', router);
+app.use(authMiddleWare);
 app.use(errorMiddleware);
+
 
 
 //----------------------------------------------   Routes     ----------------------------------------------//
@@ -41,8 +46,10 @@ router.route('/').get(home);
 router.route('/registration').post(validate(SignUpSchema),registration); // Route with corresponding validator using Zod
 
 // app.use(authMiddleWare);
-router.route('/login').post(validate(loginSchema),authMiddleWare,login); // Route with corresponding validator using Zod
+router.route('/login').post(validate(loginSchema),login); // Route with corresponding validator using Zod
 router.route('/user').get(authMiddleWare, user);
+router.route('/service').get(service);
+router.route('/addservice').post(addService);
 
 // Other middleware...
 

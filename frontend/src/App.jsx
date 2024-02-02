@@ -7,20 +7,26 @@ import {
 import SignupPage from './pages/Signup';
 import Home from './pages/Home'
 import LoginPage from './pages/Login';
+import Logout from './components/Logout'
+import CardList from './components/card-list'
+import Items from './components/Items'
 
 function App() {
   return (
-    <div className="min-h-full h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div className="max-w-md w-full space-y-8">
+    <>
+     
      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}/>
             <Route path="/login" element={<LoginPage/>} />
             <Route path="/registration" element={<SignupPage/>} />
+            <Route path="/logout" element={<Logout />} />
+            <Route path="/cardlist" element={<CardList />} />
+            <Route path="/items" element={<Items />} />
         </Routes>
       </BrowserRouter>
-    </div>
-  </div>
+    
+      </>
   );
 }
 

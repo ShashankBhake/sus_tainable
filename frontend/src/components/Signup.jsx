@@ -52,6 +52,7 @@ export default function Signup(){
  
 
     return(
+       
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
         <div className="">
         {
@@ -77,5 +78,6 @@ export default function Signup(){
          
 
       </form>
+     
     )
 }
